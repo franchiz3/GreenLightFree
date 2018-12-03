@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenLight", "GreenLight.csproj", "{79FEF111-DFE3-AD76-A84A-D4AC913B52C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenLight.Editor", "GreenLight.Editor.csproj", "{64BDF933-D623-0DBB-7E15-D059B58F6985}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79FEF111-DFE3-AD76-A84A-D4AC913B52C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79FEF111-DFE3-AD76-A84A-D4AC913B52C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79FEF111-DFE3-AD76-A84A-D4AC913B52C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79FEF111-DFE3-AD76-A84A-D4AC913B52C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64BDF933-D623-0DBB-7E15-D059B58F6985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64BDF933-D623-0DBB-7E15-D059B58F6985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64BDF933-D623-0DBB-7E15-D059B58F6985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64BDF933-D623-0DBB-7E15-D059B58F6985}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

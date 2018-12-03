@@ -1,0 +1,243 @@
+fileFormatVersion: 2
+guid: 53690aa02ea7c014eb8f6f690b0ad190
+timeCreated: 1469653197
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: _basket_02_0
+    21300002: _basket_02_1
+    21300004: _basket_02_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 150
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: _basket_02_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 605
+        height: 508
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -115.5, y: -239}
+        - {x: -114.5, y: -237}
+        - {x: 110.5, y: -237}
+        - {x: 111.5, y: -238}
+        - {x: 112.5, y: -244}
+        - {x: 114.5, y: -249}
+        - {x: 118.5, y: -254}
+        - {x: 226.5, y: -254}
+        - {x: 231.5, y: -249}
+        - {x: 233.5, y: -244}
+        - {x: 234.5, y: -238}
+        - {x: 235.5, y: -237}
+        - {x: 259.5, y: -237}
+        - {x: 260.5, y: -236}
+        - {x: 268.5, y: -236}
+        - {x: 274.5, y: -235}
+        - {x: 275.5, y: -234}
+        - {x: 281.5, y: -233}
+        - {x: 286.5, y: -231}
+        - {x: 291.5, y: -227}
+        - {x: 296.5, y: -216}
+        - {x: 297.5, y: -212}
+        - {x: 298.5, y: -206}
+        - {x: 298.5, y: -198}
+        - {x: 299.5, y: -197}
+        - {x: 299.5, y: -123}
+        - {x: 298.5, y: -122}
+        - {x: 298.5, y: -115}
+        - {x: 299.5, y: -114}
+        - {x: 299.5, y: -40}
+        - {x: 298.5, y: -39}
+        - {x: 298.5, y: -31}
+        - {x: 299.5, y: -30}
+        - {x: 299.5, y: 42}
+        - {x: 298.5, y: 43}
+        - {x: 298.5, y: 123}
+        - {x: 297.5, y: 124}
+        - {x: 297.5, y: 131}
+        - {x: 298.5, y: 132}
+        - {x: 298.5, y: 206}
+        - {x: 297.5, y: 207}
+        - {x: 297.5, y: 215}
+        - {x: 296.5, y: 221}
+        - {x: 295.5, y: 225}
+        - {x: 294.5, y: 228}
+        - {x: 292.5, y: 233}
+        - {x: 285.5, y: 240}
+        - {x: 280.5, y: 242}
+        - {x: 274.5, y: 243}
+        - {x: 273.5, y: 244}
+        - {x: 267.5, y: 245}
+        - {x: 258.5, y: 245}
+        - {x: 257.5, y: 246}
+        - {x: 234.5, y: 246}
+        - {x: 234.5, y: 249}
+        - {x: 232.5, y: 254}
+        - {x: 113.5, y: 254}
+        - {x: 111.5, y: 249}
+        - {x: 111.5, y: 246}
+        - {x: -115.5, y: 246}
+        - {x: -116.5, y: 251}
+        - {x: -118.5, y: 254}
+        - {x: -235.5, y: 254}
+        - {x: -236.5, y: 253}
+        - {x: -238.5, y: 248}
+        - {x: -238.5, y: 246}
+        - {x: -251.5, y: 246}
+        - {x: -252.5, y: 245}
+        - {x: -261.5, y: 245}
+        - {x: -267.5, y: 244}
+        - {x: -268.5, y: 243}
+        - {x: -274.5, y: 242}
+        - {x: -279.5, y: 240}
+        - {x: -284.5, y: 236}
+        - {x: -289.5, y: 225}
+        - {x: -290.5, y: 221}
+        - {x: -291.5, y: 215}
+        - {x: -291.5, y: 206}
+        - {x: -292.5, y: 205}
+        - {x: -292.5, y: 133}
+        - {x: -291.5, y: 132}
+        - {x: -291.5, y: 123}
+        - {x: -292.5, y: 122}
+        - {x: -292.5, y: 50}
+        - {x: -291.5, y: 49}
+        - {x: -291.5, y: -31}
+        - {x: -290.5, y: -32}
+        - {x: -290.5, y: -39}
+        - {x: -291.5, y: -40}
+        - {x: -291.5, y: -114}
+        - {x: -290.5, y: -115}
+        - {x: -290.5, y: -122}
+        - {x: -291.5, y: -123}
+        - {x: -291.5, y: -197}
+        - {x: -290.5, y: -198}
+        - {x: -290.5, y: -206}
+        - {x: -289.5, y: -212}
+        - {x: -288.5, y: -216}
+        - {x: -287.5, y: -219}
+        - {x: -285.5, y: -224}
+        - {x: -278.5, y: -231}
+        - {x: -273.5, y: -233}
+        - {x: -266.5, y: -235}
+        - {x: -260.5, y: -236}
+        - {x: -252.5, y: -236}
+        - {x: -251.5, y: -237}
+        - {x: -239.5, y: -237}
+        - {x: -237.5, y: -245}
+        - {x: -235.5, y: -250}
+        - {x: -231.5, y: -254}
+        - {x: -122.5, y: -254}
+        - {x: -118.5, y: -250}
+        - {x: -116.5, y: -245}
+    - name: _basket_02_1
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 64
+        width: 364
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 150, y: -74}
+        - {x: 148, y: -73}
+        - {x: 149, y: -43}
+        - {x: 145, y: -29}
+        - {x: 145, y: 1}
+        - {x: 144, y: 20}
+        - {x: 143, y: 47}
+        - {x: 142, y: 55}
+        - {x: 141, y: 86}
+        - {x: 139, y: 121}
+        - {x: 138, y: 149}
+        - {x: -158, y: 149}
+        - {x: -159, y: 148}
+        - {x: -163, y: 129}
+        - {x: -166, y: 106}
+        - {x: -168, y: 78}
+        - {x: -169, y: 41}
+        - {x: -168, y: 10}
+        - {x: -171, y: -12}
+        - {x: -171, y: -32}
+        - {x: -174, y: -34}
+        - {x: -176, y: -44}
+        - {x: -176, y: -47}
+        - {x: -171, y: -53}
+        - {x: -167, y: -77}
+        - {x: -162, y: -97}
+        - {x: -158, y: -114}
+        - {x: -153, y: -117}
+        - {x: 132, y: -117}
+        - {x: 146, y: -116}
+        - {x: 150, y: -113}
+    - name: _basket_02_2
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 7
+        width: 311
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -152.5, y: 20.5}
+        - {x: -152.5, y: -10.5}
+        - {x: -147.5, y: -20.5}
+        - {x: 123.5, y: -20.5}
+        - {x: 134.5, y: -13.5}
+        - {x: 134.5, y: 20.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

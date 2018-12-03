@@ -1,0 +1,531 @@
+471	Early by: 24ms	Off Perfect by: 30ms
+471	Early by: 24ms	Off Perfect by: 30ms
+556	Late by : 33ms	 Off Perfect by: 39ms
+488	Early by: 7ms	Off Perfect by: 13ms
+488	Early by: 7ms	Off Perfect by: 13ms
+522	In Window	Off Perfect by: 5ms
+471	Early by: 24ms	Off Perfect by: 30ms
+Average: 495.3
+Early: 5	Late: 1	In Window: 1	Perfect Green: 0
+Shots Made / Taken: 5/7%0
+
+522	Late by : 4ms	 Off Perfect by: 11ms
+Average: 522
+Early: 0	Late: 1	In Window: 0	Perfect Green: 0
+Shots Made / Taken: 1/1%100
+
+488	Perfect Green
+488	Perfect Green
+Average: 488
+Early: 0	Late: 0	In Window: 2	Perfect Green: 2
+Shots Made / Taken: 2/2%100
+
+505	Late by : 2ms	 Off Perfect by: 6ms
+Average: 505
+Early: 0	Late: 1	In Window: 0	Perfect Green: 0
+Shots Made / Taken: 1/1%100
+
+454	Early by: 21ms	Off Perfect by: 26ms
+468	Early by: 7ms	Off Perfect by: 12ms
+488	Perfect Green
+471	Early by: 4ms	Off Perfect by: 9ms
+509	Late by : 8ms	 Off Perfect by: 13ms
+488	Perfect Green
+505	Late by : 4ms	 Off Perfect by: 9ms
+Average: 483.3
+Early: 3	Late: 2	In Window: 2	Perfect Green: 2
+Shots Made / Taken: 6/7%0
+
+488	In Window	Off Perfect by: 17ms
+488	In Window	Off Perfect by: 17ms
+488	In Window	Off Perfect by: 17ms
+488	In Window	Off Perfect by: 17ms
+471	Early by: 13ms	Off Perfect by: 18ms
+471	Early by: 13ms	Off Perfect by: 18ms
+Average: 482.3
+Early: 2	Late: 0	In Window: 4	Perfect Green: 0
+Shots Made / Taken: 4/6%0
+
+505	Perfect Green
+505	Perfect Green
+471	Early by: 16ms	Off Perfect by: 20ms
+488	In Window	Off Perfect by: 19ms
+488	In Window	Off Perfect by: 19ms
+488	In Window	Off Perfect by: 19ms
+522	Late by : 11ms	 Off Perfect by: 15ms
+Average: 495.3
+Early: 1	Late: 1	In Window: 5	Perfect Green: 2
+Shots Made / Taken: 6/7%0
+
+522	In Window	Off Perfect by: 3ms
+522	In Window	Off Perfect by: 3ms
+505	Perfect Green
+505	Perfect Green
+505	Perfect Green
+522	In Window	Off Perfect by: 3ms
+Average: 513.5
+Early: 0	Late: 0	In Window: 6	Perfect Green: 3
+Shots Made / Taken: 5/6%0
+
+471	Early by: 8ms	Off Perfect by: 14ms
+489	Perfect Green
+Average: 480
+Early: 1	Late: 0	In Window: 1	Perfect Green: 1
+Shots Made / Taken: 1/2%0
+
+488	Early by: 6ms	Off Perfect by: 12ms
+454	Early by: 40ms	Off Perfect by: 46ms
+505	Perfect Green
+488	Early by: 6ms	Off Perfect by: 12ms
+471	Early by: 23ms	Off Perfect by: 29ms
+488	Early by: 6ms	Off Perfect by: 12ms
+471	Early by: 23ms	Off Perfect by: 29ms
+556	Late by : 33ms	 Off Perfect by: 40ms
+488	Early by: 6ms	Off Perfect by: 12ms
+505	Perfect Green
+505	Perfect Green
+Average: 492.6
+Early: 7	Late: 1	In Window: 3	Perfect Green: 3
+Shots Made / Taken: 9/11%0
+
+488	Perfect Green
+Average: 488
+Early: 0	Late: 0	In Window: 1	Perfect Green: 1
+Shots Made / Taken: 1/1%100
+
+505	Perfect Green
+522	Late by : 3ms	 Off Perfect by: 7ms
+488	Early by: 7ms	Off Perfect by: 11ms
+488	Early by: 7ms	Off Perfect by: 11ms
+505	Perfect Green
+454	Early by: 41ms	Off Perfect by: 45ms
+505	Perfect Green
+Average: 495.3
+Early: 3	Late: 1	In Window: 3	Perfect Green: 3
+Shots Made / Taken: 6/7%0
+
+488	Perfect Green
+556	Late by : 53ms	 Off Perfect by: 58ms
+572	Late by : 69ms	 Off Perfect by: 74ms
+640	Late by : 137ms	 Off Perfect by: 142ms
+Average: 564
+Early: 0	Late: 3	In Window: 1	Perfect Green: 1
+Shots Made / Taken: 2/4%0
+
+741	Late by : 229ms	 Off Perfect by: 234ms
+Average: 741
+Early: 0	Late: 1	In Window: 0	Perfect Green: 0
+Shots Made / Taken: 0/1%0
+
+960	Late by : 451ms	 Off Perfect by: 457ms
+Average: 960
+Early: 0	Late: 1	In Window: 0	Perfect Green: 0
+Shots Made / Taken: 0/1%0
+
+522	Late by : 12ms	 Off Perfect by: 19ms
+926	Late by : 416ms	 Off Perfect by: 423ms
+Average: 724
+Early: 0	Late: 2	In Window: 0	Perfect Green: 0
+Shots Made / Taken: 1/2%0
+
+505	In Window	Off Perfect by: 1ms
+454	Early by: 29ms	Off Perfect by: 34ms
+522	Late by : 12ms	 Off Perfect by: 18ms
+Average: 493.7
+Early: 1	Late: 1	In Window: 1	Perfect Green: 0
+Shots Made / Taken: 1/3%0
+
+690	Late by : 174ms	 Off Perfect by: 179ms
+505	Perfect Green
+168	Early by: 323ms	Off Perfect by: 327ms
+522	Late by : 6ms	 Off Perfect by: 11ms
+606	Late by : 90ms	 Off Perfect by: 95ms
+505	Perfect Green
+522	Late by : 6ms	 Off Perfect by: 11ms
+505	Perfect Green
+522	Late by : 6ms	 Off Perfect by: 11ms
+Average: 505
+Early: 1	Late: 5	In Window: 3	Perfect Green: 3
+Shots Made / Taken: 5/9%0
+
+522	In Window	Off Perfect by: 6ms
+471	Early by: 23ms	Off Perfect by: 29ms
+471	Early by: 23ms	Off Perfect by: 29ms
+471	Early by: 23ms	Off Perfect by: 29ms
+303	Early by: 191ms	Off Perfect by: 197ms
+505	Perfect Green
+471	Early by: 23ms	Off Perfect by: 29ms
+488	Early by: 6ms	Off Perfect by: 12ms
+488	Early by: 6ms	Off Perfect by: 12ms
+471	Early by: 23ms	Off Perfect by: 29ms
+522	In Window	Off Perfect by: 6ms
+Average: 471.2
+Early: 8	Late: 0	In Window: 3	Perfect Green: 1
+Shots Made / Taken: 7/11%0
+
+526	Late by : 23ms	 Off Perfect by: 29ms
+499	In Window	Off Perfect by: 2ms
+532	Late by : 29ms	 Off Perfect by: 35ms
+466	Early by: 10ms	Off Perfect by: 15ms
+490	Perfect Green
+530	Late by : 27ms	 Off Perfect by: 33ms
+488	Perfect Green
+520	Late by : 17ms	 Off Perfect by: 23ms
+536	Late by : 33ms	 Off Perfect by: 39ms
+460	Early by: 16ms	Off Perfect by: 21ms
+496	Perfect Green
+Average: 503.9
+Early: 2	Late: 5	In Window: 4	Perfect Green: 3
+Shots Made / Taken: 7/11%0
+
+565	Late by : 50ms	 Off Perfect by: 56ms
+524	Late by : 9ms	 Off Perfect by: 15ms
+527	Late by : 12ms	 Off Perfect by: 18ms
+504	Perfect Green
+565	Late by : 50ms	 Off Perfect by: 56ms
+572	Late by : 57ms	 Off Perfect by: 63ms
+513	In Window	Off Perfect by: 4ms
+519	Late by : 4ms	 Off Perfect by: 10ms
+526	Late by : 11ms	 Off Perfect by: 17ms
+441	Early by: 47ms	Off Perfect by: 52ms
+520	Late by : 5ms	 Off Perfect by: 11ms
+515	In Window	Off Perfect by: 6ms
+Average: 524.2
+Early: 1	Late: 8	In Window: 3	Perfect Green: 1
+Shots Made / Taken: 6/12%0
+
+526	Late by : 2ms	 Off Perfect by: 7ms
+476	Early by: 23ms	Off Perfect by: 27ms
+539	Late by : 15ms	 Off Perfect by: 20ms
+386	Early by: 113ms	Off Perfect by: 117ms
+541	Late by : 17ms	 Off Perfect by: 22ms
+297	Early by: 202ms	Off Perfect by: 206ms
+Average: 460.8
+Early: 3	Late: 3	In Window: 0	Perfect Green: 0
+Shots Made / Taken: 2/6%0
+
+505	Perfect Green
+556	Late by : 33ms	 Off Perfect by: 40ms
+505	Perfect Green
+454	Early by: 40ms	Off Perfect by: 46ms
+471	Early by: 23ms	Off Perfect by: 29ms
+505	Perfect Green
+488	Early by: 6ms	Off Perfect by: 12ms
+438	Early by: 56ms	Off Perfect by: 62ms
+471	Early by: 23ms	Off Perfect by: 29ms
+522	In Window	Off Perfect by: 6ms
+505	Perfect Green
+Average: 492.7
+Early: 5	Late: 1	In Window: 5	Perfect Green: 4
+Shots Made / Taken: 8/11%0
+
+522	Late by : 2ms	 Off Perfect by: 8ms
+505	Perfect Green
+488	Early by: 5ms	Off Perfect by: 10ms
+454	Early by: 39ms	Off Perfect by: 44ms
+454	Early by: 39ms	Off Perfect by: 44ms
+539	Late by : 19ms	 Off Perfect by: 25ms
+488	Early by: 5ms	Off Perfect by: 10ms
+471	Early by: 22ms	Off Perfect by: 27ms
+505	Perfect Green
+488	Early by: 5ms	Off Perfect by: 10ms
+505	Perfect Green
+522	Late by : 2ms	 Off Perfect by: 8ms
+488	Early by: 5ms	Off Perfect by: 10ms
+539	Late by : 19ms	 Off Perfect by: 25ms
+488	Early by: 5ms	Off Perfect by: 10ms
+556	Late by : 36ms	 Off Perfect by: 42ms
+539	Late by : 19ms	 Off Perfect by: 25ms
+Average: 503
+Early: 8	Late: 6	In Window: 3	Perfect Green: 3
+Shots Made / Taken: 12/17%0
+
+488	Perfect Green
+505	In Window	Off Perfect by: 4ms
+466	Early by: 15ms	Off Perfect by: 19ms
+454	Early by: 27ms	Off Perfect by: 31ms
+488	Perfect Green
+488	Perfect Green
+454	Early by: 27ms	Off Perfect by: 31ms
+488	Perfect Green
+471	Early by: 10ms	Off Perfect by: 14ms
+454	Early by: 27ms	Off Perfect by: 31ms
+505	In Window	Off Perfect by: 4ms
+505	In Window	Off Perfect by: 4ms
+505	In Window	Off Perfect by: 4ms
+471	Early by: 10ms	Off Perfect by: 14ms
+Average: 481.6
+Early: 6	Late: 0	In Window: 8	Perfect Green: 4
+Shots Made / Taken: 12/14%0
+
+488	Late by : 488ms	 Off Perfect by: 480ms
+421	Late by : 421ms	 Off Perfect by: 413ms
+438	Late by : 438ms	 Off Perfect by: 430ms
+454	Late by : 454ms	 Off Perfect by: 446ms
+454	Late by : 454ms	 Off Perfect by: 446ms
+454	Late by : 454ms	 Off Perfect by: 446ms
+438	Late by : 438ms	 Off Perfect by: 430ms
+438	Late by : 438ms	 Off Perfect by: 430ms
+387	Late by : 387ms	 Off Perfect by: 379ms
+488	Late by : 488ms	 Off Perfect by: 480ms
+454	Late by : 454ms	 Off Perfect by: 446ms
+404	Late by : 404ms	 Off Perfect by: 396ms
+438	Late by : 438ms	 Off Perfect by: 430ms
+488	Late by : 488ms	 Off Perfect by: 480ms
+454	Late by : 454ms	 Off Perfect by: 446ms
+471	Late by : 471ms	 Off Perfect by: 463ms
+454	Late by : 454ms	 Off Perfect by: 446ms
+370	Late by : 370ms	 Off Perfect by: 362ms
+387	Late by : 387ms	 Off Perfect by: 379ms
+336	Late by : 336ms	 Off Perfect by: 328ms
+336	Late by : 336ms	 Off Perfect by: 328ms
+353	Late by : 353ms	 Off Perfect by: 345ms
+387	Late by : 387ms	 Off Perfect by: 379ms
+370	Late by : 370ms	 Off Perfect by: 362ms
+421	Late by : 421ms	 Off Perfect by: 413ms
+336	Late by : 336ms	 Off Perfect by: 328ms
+370	Late by : 370ms	 Off Perfect by: 362ms
+135	Late by : 135ms	 Off Perfect by: 127ms
+67	Late by : 67ms	 Off Perfect by: 59ms
+168	Late by : 168ms	 Off Perfect by: 160ms
+Average: 388.6
+Early: 0	Late: 30	In Window: 0	Perfect Green: 0
+Shots Made / Taken: 20/30%0
+
+488	Perfect Green
+488	Perfect Green
+471	Early by: 7ms	Off Perfect by: 13ms
+505	In Window	Off Perfect by: 5ms
+438	Early by: 40ms	Off Perfect by: 46ms
+Average: 478
+Early: 2	Late: 0	In Window: 3	Perfect Green: 2
+Shots Made / Taken: 4/5%0
+
+505	Perfect Green
+488	In Window	Off Perfect by: 17ms
+505	Perfect Green
+471	Early by: 13ms	Off Perfect by: 18ms
+488	In Window	Off Perfect by: 17ms
+Average: 491.4
+Early: 1	Late: 0	In Window: 4	Perfect Green: 2
+Shots Made / Taken: 2/5%0
+
+522	In Window	Off Perfect by: 5ms
+522	In Window	Off Perfect by: 5ms
+505	Perfect Green
+505	Perfect Green
+505	Perfect Green
+522	In Window	Off Perfect by: 5ms
+488	Early by: 8ms	Off Perfect by: 13ms
+505	Perfect Green
+471	Early by: 25ms	Off Perfect by: 30ms
+505	Perfect Green
+488	Early by: 8ms	Off Perfect by: 13ms
+488	Early by: 8ms	Off Perfect by: 13ms
+454	Early by: 42ms	Off Perfect by: 47ms
+505	Perfect Green
+522	In Window	Off Perfect by: 5ms
+505	Perfect Green
+471	Early by: 25ms	Off Perfect by: 30ms
+Average: 499
+Early: 6	Late: 0	In Window: 11	Perfect Green: 7
+Shots Made / Taken: 15/17%0
+
+488	Early by: 1ms	Off Perfect by: 6ms
+505	Perfect Green
+522	Late by : 7ms	 Off Perfect by: 12ms
+505	Perfect Green
+488	Early by: 1ms	Off Perfect by: 6ms
+488	Early by: 1ms	Off Perfect by: 6ms
+539	Late by : 24ms	 Off Perfect by: 29ms
+505	Perfect Green
+438	Early by: 51ms	Off Perfect by: 56ms
+522	Late by : 7ms	 Off Perfect by: 12ms
+454	Early by: 35ms	Off Perfect by: 40ms
+471	Early by: 18ms	Off Perfect by: 23ms
+522	Late by : 7ms	 Off Perfect by: 12ms
+488	Early by: 1ms	Off Perfect by: 6ms
+488	Early by: 1ms	Off Perfect by: 6ms
+488	Early by: 1ms	Off Perfect by: 6ms
+488	Early by: 1ms	Off Perfect by: 6ms
+522	Late by : 7ms	 Off Perfect by: 12ms
+454	Early by: 35ms	Off Perfect by: 40ms
+505	Perfect Green
+488	Early by: 1ms	Off Perfect by: 6ms
+421	Early by: 68ms	Off Perfect by: 73ms
+454	Early by: 35ms	Off Perfect by: 40ms
+522	Late by : 7ms	 Off Perfect by: 12ms
+471	Early by: 18ms	Off Perfect by: 23ms
+488	Early by: 1ms	Off Perfect by: 6ms
+Average: 489.4
+Early: 16	Late: 6	In Window: 4	Perfect Green: 4
+Shots Made / Taken: 19/26%0
+
+471	Early by: 7ms	Off Perfect by: 13ms
+488	Perfect Green
+505	In Window	Off Perfect by: 5ms
+488	Perfect Green
+488	Perfect Green
+488	Perfect Green
+454	Early by: 24ms	Off Perfect by: 30ms
+505	In Window	Off Perfect by: 5ms
+488	Perfect Green
+471	Early by: 7ms	Off Perfect by: 13ms
+488	Perfect Green
+505	In Window	Off Perfect by: 5ms
+471	Early by: 7ms	Off Perfect by: 13ms
+Average: 485.4
+Early: 4	Late: 0	In Window: 9	Perfect Green: 6
+Shots Made / Taken: 13/13%100
+
+454505	In Window	Off Perfect by: 2ms
+471	Early by: 10ms	Off Perfect by: 16ms
+522	Late by : 13ms	 Off Perfect by: 19ms
+454	Early by: 27ms	Off Perfect by: 33ms
+454	Early by: 27ms	Off Perfect by: 33ms
+454	Early by: 27ms	Off Perfect by: 33ms
+454	Early by: 27ms	Off Perfect by: 33ms
+522	Late by : 13ms	 Off Perfect by: 19ms
+505	In Window	Off Perfect by: 2ms
+505	In Window	Off Perfect by: 2ms
+488	Perfect Green
+454	Early by: 27ms	Off Perfect by: 33ms
+471	Early by: 10ms	Off Perfect by: 16ms
+471	Early by: 10ms	Off Perfect by: 16ms
+488	Perfect Green
+488	Perfect Green
+454	Early by: 27ms	Off Perfect by: 33ms
+475	Early by: 6ms	Off Perfect by: 12ms
+454	Early by: 27ms	Off Perfect by: 33ms
+488	Perfect Green
+471	Early by: 10ms	Off Perfect by: 16ms
+471	Early by: 10ms	Off Perfect by: 16ms
+438	Early by: 43ms	Off Perfect by: 49ms
+Average: 476.4
+Early: 14	Late: 2	In Window: 7	Perfect Green: 4
+Shots Made / Taken: 16/23%0
+
+522	Late by : 7ms	 Off Perfect by: 13ms
+488	In Window	Off Perfect by: 21ms
+488	In Window	Off Perfect by: 21ms
+488	In Window	Off Perfect by: 21ms
+471	Early by: 16ms	Off Perfect by: 22ms
+471	Early by: 16ms	Off Perfect by: 22ms
+488	In Window	Off Perfect by: 21ms
+488	In Window	Off Perfect by: 21ms
+438	Early by: 49ms	Off Perfect by: 55ms
+488	In Window	Off Perfect by: 21ms
+471	Early by: 16ms	Off Perfect by: 22ms
+471	Early by: 16ms	Off Perfect by: 22ms
+471	Early by: 16ms	Off Perfect by: 22ms
+488	In Window	Off Perfect by: 21ms
+471	Early by: 16ms	Off Perfect by: 22ms
+488	In Window	Off Perfect by: 21ms
+488	In Window	Off Perfect by: 21ms
+505	Perfect Green
+488	In Window	Off Perfect by: 21ms
+488	In Window	Off Perfect by: 21ms
+471	Early by: 16ms	Off Perfect by: 22ms
+471	Early by: 16ms	Off Perfect by: 22ms
+471	Early by: 16ms	Off Perfect by: 22ms
+454	Early by: 33ms	Off Perfect by: 39ms
+Average: 480.2
+Early: 11	Late: 1	In Window: 12	Perfect Green: 1
+Shots Made / Taken: 13/24%0
+
+471	Early by: 6ms	Off Perfect by: 10ms
+454	Early by: 23ms	Off Perfect by: 27ms
+471	Early by: 6ms	Off Perfect by: 10ms
+505	Late by : 4ms	 Off Perfect by: 8ms
+488	Perfect Green
+488	Perfect Green
+471	Early by: 6ms	Off Perfect by: 10ms
+471	Early by: 6ms	Off Perfect by: 10ms
+471	Early by: 6ms	Off Perfect by: 10ms
+438	Early by: 39ms	Off Perfect by: 43ms
+471	Early by: 6ms	Off Perfect by: 10ms
+471	Early by: 6ms	Off Perfect by: 10ms
+454	Early by: 23ms	Off Perfect by: 27ms
+454	Early by: 23ms	Off Perfect by: 27ms
+505	Late by : 4ms	 Off Perfect by: 8ms
+505	Late by : 4ms	 Off Perfect by: 8ms
+471	Early by: 6ms	Off Perfect by: 10ms
+556	Late by : 55ms	 Off Perfect by: 59ms
+505	Late by : 4ms	 Off Perfect by: 8ms
+505	Late by : 4ms	 Off Perfect by: 8ms
+471	Early by: 6ms	Off Perfect by: 10ms
+101	Early by: 376ms	Off Perfect by: 380ms
+Average: 463.5
+Early: 14	Late: 6	In Window: 2	Perfect Green: 2
+Shots Made / Taken: 18/22%0
+
+505	Late by : 2ms	 Off Perfect by: 8ms
+522	Late by : 19ms	 Off Perfect by: 25ms
+522	Late by : 19ms	 Off Perfect by: 25ms
+456	Early by: 19ms	Off Perfect by: 25ms
+471	Early by: 4ms	Off Perfect by: 10ms
+471	Early by: 4ms	Off Perfect by: 10ms
+556	Late by : 53ms	 Off Perfect by: 59ms
+572	Late by : 69ms	 Off Perfect by: 75ms
+488	Perfect Green
+488	Perfect Green
+488	Perfect Green
+488	Perfect Green
+522	Late by : 19ms	 Off Perfect by: 25ms
+505	Late by : 2ms	 Off Perfect by: 8ms
+505	Late by : 2ms	 Off Perfect by: 8ms
+440	Early by: 35ms	Off Perfect by: 41ms
+Average: 499.9
+Early: 4	Late: 8	In Window: 4	Perfect Green: 4
+Shots Made / Taken: 11/16%0
+
+522	Late by : 3ms	 Off Perfect by: 9ms
+505	Perfect Green
+539	Late by : 20ms	 Off Perfect by: 26ms
+471	Early by: 21ms	Off Perfect by: 26ms
+556	Late by : 37ms	 Off Perfect by: 43ms
+488	Early by: 4ms	Off Perfect by: 9ms
+Average: 513.5
+Early: 2	Late: 3	In Window: 1	Perfect Green: 1
+Shots Made / Taken: 4/6%0
+
+505	Perfect Green
+488	In Window	Off Perfect by: 18ms
+539	Late by : 28ms	 Off Perfect by: 33ms
+505	Perfect Green
+539	Late by : 28ms	 Off Perfect by: 33ms
+488	In Window	Off Perfect by: 18ms
+505	Perfect Green
+488	In Window	Off Perfect by: 18ms
+454	Early by: 32ms	Off Perfect by: 36ms
+522	Late by : 11ms	 Off Perfect by: 16ms
+Average: 503.3
+Early: 1	Late: 3	In Window: 6	Perfect Green: 3
+Shots Made / Taken: 7/10%0
+
+505527	Late by : 13ms	 Off Perfect by: 19ms
+522	Late by : 8ms	 Off Perfect by: 14ms
+539	Late by : 25ms	 Off Perfect by: 31ms
+522	Late by : 8ms	 Off Perfect by: 14ms
+589	Late by : 75ms	 Off Perfect by: 81ms
+496	Perfect Green
+471	Early by: 16ms	Off Perfect by: 21ms
+488	In Window	Off Perfect by: 20ms
+488	In Window	Off Perfect by: 20ms
+Average: 515.8
+Early: 1	Late: 5	In Window: 3	Perfect Green: 1
+Shots Made / Taken: 6/9%0
+
+522	Late by : 17ms	 Off Perfect by: 23ms
+505	In Window	Off Perfect by: 6ms
+539	Late by : 34ms	 Off Perfect by: 40ms
+522	Late by : 17ms	 Off Perfect by: 23ms
+505	In Window	Off Perfect by: 6ms
+471	Early by: 6ms	Off Perfect by: 12ms
+539	Late by : 34ms	 Off Perfect by: 40ms
+471	Early by: 6ms	Off Perfect by: 12ms
+505	In Window	Off Perfect by: 6ms
+Average: 508.8
+Early: 2	Late: 4	In Window: 3	Perfect Green: 0
+Shots Made / Taken: 9/9%100
+
