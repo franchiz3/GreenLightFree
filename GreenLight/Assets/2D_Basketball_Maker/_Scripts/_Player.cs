@@ -174,7 +174,7 @@ public class _Player : MonoBehaviour
 
 			for(int i=0;i<TrajectoryPoints;i++)
 			{
-				GameObject D = (GameObject) Instantiate(TrajectoryPointPrefab);
+				GameObject D =  Instantiate(TrajectoryPointPrefab);
 				trajectoryPoints.Insert(i,D);
 				D.transform.parent = _parent_tp.transform;
 			}
@@ -455,7 +455,6 @@ public class _Player : MonoBehaviour
                 {
                     StartCoroutine(ButtonMaster.DisplayTip("Sorry You're Out Of Shots Today :(. Have No Fear, You Can Earn More By Watching An Ad! (Main Menu)", false, true));
                     ButtonMaster.playActive = false;
-                    System.DateTime end = System.DateTime.Now.AddDays(1);
                     //if (!PlayerPrefs.HasKey("coolEnd"))
                       //  PlayerPrefs.SetString("coolEnd", end.ToString());
                     //StartCoroutine(ButtonMaster.RefreshCountDown());

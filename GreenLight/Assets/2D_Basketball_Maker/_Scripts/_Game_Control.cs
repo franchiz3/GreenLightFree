@@ -72,6 +72,8 @@ public class _Game_Control : MonoBehaviour {
             TimeController.StopRoutines();
             ButtonMaster.ShowBannerAd();
         }
+        ButtonMaster.instance.exitBanner.GetComponentInChildren<Text>().text = "";
+        Advertisement.Banner.Hide();
         Time.timeScale = 1;
         _pausegame.paused = false;
         _Player.annoucement.text = "";

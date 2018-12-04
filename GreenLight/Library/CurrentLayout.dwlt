@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 123
+  controlID: 26
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 72
+  controlID: 40
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 50
+  controlID: 41
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -364,19 +364,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Resources/Sprites
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Resources/Sprites
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\GreenLightFree\GreenLight
+  m_LastProjectPath: C:\GreenLightRepo\GreenLight
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 1126}
-    m_SelectedIDs: dc290000
-    m_LastClickedID: 10716
-    m_ExpandedIDs: 00000000a0290000b42900007a2a0000c82a00001c2b00002c2b0000802b0000822b0000b42b0000ec2b00007c2c0000e22c0000342d0000542d0000822d0000ac2d0000ba2d0000de2d0000462e0000662e0000682e0000922e0000ee2e0000422f00004c2f0000602f0000842f0000524800005448000056480000584800005a4800005c4800005e4800006048000062480000644800006648000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 902}
+    m_SelectedIDs: 322f0000
+    m_LastClickedID: 12082
+    m_ExpandedIDs: 00000000a0290000b42900007a2a0000ca2a00001e2b00002e2b0000822b0000842b0000b62b0000ee2b0000802c0000e62c0000382d0000582d0000862d0000b02d0000be2d0000e22d00004a2e00006a2e00006c2e0000962e0000f22e0000482f0000522f0000662f00008a2f0000684800006a4800006c4800006e48000070480000724800007448000076480000784800007a4800007c48000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -404,7 +404,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a0290000b42900007a2a0000c82a00001c2b00002c2b0000802b0000822b0000b42b0000ec2b00007c2c0000e22c0000342d0000542d0000822d0000ac2d0000ba2d0000de2d0000462e0000662e0000682e0000922e0000ee2e0000422f00004c2f0000602f0000842f0000524800005448000056480000584800005a4800005c4800005e48000060480000624800006448000066480000
+    m_ExpandedIDs: 00000000a0290000b42900007a2a0000ca2a00001e2b00002e2b0000822b0000842b0000b62b0000ee2b0000802c0000e62c0000382d0000582d0000862d0000b02d0000be2d0000e22d00004a2e00006a2e00006c2e0000962e0000f22e0000482f0000522f0000662f00008a2f0000684800006a4800006c4800006e48000070480000724800007448000076480000784800007a4800007c480000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -431,8 +431,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000b626010000000000142a0000682c00000e290000462b0000de370000163a0000e23500003028000054280000d42a0000ce070000
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000b626010000000000142a0000682c00000e290000462b0000de370000163a0000e23500003028000054280000d42a0000ce070000022f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -522,9 +522,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 94090000
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 9cfbffff00000000
+    m_ExpandedIDs: 94c6ffff6cc7ffffdec8ffff9cfbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -659,10 +659,10 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -432
-    m_HBaseRangeMax: 432
-    m_VBaseRangeMin: -247
-    m_VBaseRangeMax: 247
+    m_HBaseRangeMin: -427
+    m_HBaseRangeMax: 427
+    m_VBaseRangeMin: -240
+    m_VBaseRangeMax: 240
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1

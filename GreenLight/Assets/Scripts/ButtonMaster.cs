@@ -10,7 +10,7 @@ using UnityEngine.UI;
 public class ButtonMaster : MonoBehaviour {
     private static int shot = 125;
     public static ButtonMaster instance;
-    public GameObject master;
+    public GameObject master, exitBanner;
     public Button shotParamsToggler,longToMid,discoverToggler, muteMusic, muteFX, exitButton;
     public Sprite chosen, notChosen;
     public GameObject go, newShot, cancelShot, timeButtons, barHolder,x,canvas,xShadow, tips, dailyShots, timeDisplay;
@@ -23,13 +23,14 @@ public class ButtonMaster : MonoBehaviour {
     public SimpleHealthBar shotBar, lastShot;
     private Coroutine current;
     private string tempShot = null;
-    private static bool paramsActive, editActive, soundActive, musicMuted, FXMuted ;
+    private static bool paramsActive, editActive, soundActive, musicMuted, FXMuted,waiting ;
     public static bool inMenu, UIActive, displaying = false, tipsEnabled, playActive = true;
     private Color tempColor;
     public GameObject[] shotParams, newShotParams;
     public static List<string[]> jumpShotData;
     private static InterstitialAd interstitial;
     private RewardBasedVideoAd rewardVideo;
+    private static BannerOptions defaults;
 
     void Start ()
     {
@@ -52,7 +53,7 @@ public class ButtonMaster : MonoBehaviour {
                 // #elif UNITY_IPHONE don't have this id yet
                 //           string appId = "ca-app-pub-3940256099942544~1458002511";
         #else
-                            string appId = "unexpected_platform";
+        string appId = "unexpected_platform";
         #endif
 
         // Initialize the Google Mobile Ads SDK.
@@ -66,15 +67,13 @@ public class ButtonMaster : MonoBehaviour {
         interstitial.OnAdClosed += BannerDestroy;
         interstitial.OnAdClosed += _pausegame.ADResume;
         interstitial.OnAdOpening += _pausegame.AdPause;
-        
+        //Advertisement.Banner.Load("banner");
     }
     private void Awake()
     {
         //Screen.orientation = ScreenOrientation.LandscapeLeft;
         //ca-app-pub-3472480102756008~9555381110 ADMOB id. switching advertising
-        //Advertisement.Initialize("2914734", false);
-
-        
+        Advertisement.Initialize("2914734", false);
     }
     private void SetPlayerVariables()
     {
@@ -90,8 +89,8 @@ public class ButtonMaster : MonoBehaviour {
     }
     private void OnDestroy()
     {
-       PlayerPrefs.DeleteAll();
-       PlayerPrefs.SetInt("remaining", 1);
+       //PlayerPrefs.DeleteAll();
+       //PlayerPrefs.SetInt("remaining", 1);
       // PlayerPrefs.SetInt("cash", 999999);
         PlayerPrefs.Save();
     }
@@ -215,10 +214,12 @@ public class ButtonMaster : MonoBehaviour {
             shotsLeft = PlayerPrefs.GetInt("remaining");
             if (shotsLeft < 0)
                 shotsLeft = 0;
-            if (PlayerPrefs.GetFloat("coolEnd",0) !=0 && DateTime.Now > Convert.ToDateTime(PlayerPrefs.GetString("coolEnd")))
+            if (PlayerPrefs.GetString("coolEnd",null) !=null && DateTime.Now > Convert.ToDateTime(PlayerPrefs.GetString("coolEnd")))
             {
                 PlayerPrefs.DeleteKey("coolEnd");
-               // Debug.Log("Issue Here");
+                DateTime end = DateTime.Now.AddDays(1);
+                PlayerPrefs.SetString("coolEnd", end.ToString());
+                // Debug.Log("Issue Here");
                 shotsLeft += shot;
                 PlayerPrefs.SetInt("tracking", 0);
             }
@@ -235,18 +236,16 @@ public class ButtonMaster : MonoBehaviour {
             }
 
         }
-        if ((!PlayerPrefs.HasKey("remaining") && !PlayerPrefs.HasKey("coolEnd")) || Convert.ToDateTime(PlayerPrefs.GetString("coolEnd"))<DateTime.Now)
+        else
         {
-            if (shotsLeft <= 0)
-                shotsLeft = shot;
-            else
-                shotsLeft += shot;
+            shotsLeft = shot;
             //Debug.Log("Happening");
             PlayerPrefs.SetString("coolEnd", DateTime.Now.AddDays(1).ToString());
-           // Debug.Log("Issue Here");
-        }
-        if(shotsLeft >0)
+            PlayerPrefs.SetFloat("remaining", shotsLeft);
+            // Debug.Log("Issue Here");
             dailyShots.GetComponentInChildren<Text>().text = "Shots Left: " + shotsLeft;
+        }
+        
     } 
 
     //-------------------------------------------------------------------------------
@@ -627,6 +626,7 @@ public class ButtonMaster : MonoBehaviour {
         if(shotsLeft < 10)
         {
             StartCoroutine(DisplayTip("Sorry You Can't Enter Time Attack With Fewer Than 10 Shots",false,true));
+            Debug.Log(shotsLeft);
             return;
         }
         if (GameObject.Find("_Instructions").GetComponent<Text>().color != Color.red)
@@ -973,6 +973,7 @@ public class ButtonMaster : MonoBehaviour {
         //Debug.Log("Issue Here");
         shotsLeft = shot;
     }
+    #region ADMOB
     private void Skipped(object sender, EventArgs args)
     {
         StartCoroutine(DisplayTip("If You Skip The Ad You Get No Shots :(", false, true));
@@ -987,7 +988,7 @@ public class ButtonMaster : MonoBehaviour {
     {
         LoadRewards();
     }
-    private void Reward(object sender, EventArgs args)//just testing this. I don't know if it will end up being per ad or per group of ads yet or how all of that works.
+    private void Reward(object sender, EventArgs args) //this is for admob
     {
         //LoadRewards();
         StartCoroutine(DisplayTip("Congratulations! You Just Earned 20 Shots!", false, true));
@@ -1003,7 +1004,30 @@ public class ButtonMaster : MonoBehaviour {
             go.SetActive(true);
         playActive = true;     
     }
-    
+    #endregion
+
+    private void UnityReward(ShowResult result)
+    {
+        if(result == ShowResult.Skipped)
+            StartCoroutine(DisplayTip("If You Skip The Ad You Get No Shots :(", false, true));
+        else if(result == ShowResult.Failed)
+            StartCoroutine(DisplayTip("Ad Failed To Load. Please Try Again. If The Problem Persists Contact The Developer", false, true));
+        else if(result == ShowResult.Finished)
+        {
+            StartCoroutine(DisplayTip("Congratulations! You Just Earned 20 Shots!", false, true));
+            if (shotsLeft < 0)
+                shotsLeft = 20;
+            else
+                shotsLeft += 20;
+            PlayerPrefs.SetInt("remaining", shotsLeft);
+            dailyShots.GetComponentInChildren<Text>().text = "Shots Left: " + shotsLeft;
+            if (_Player.timeAttack)
+                timeButtons.SetActive(true);
+            else
+                go.SetActive(true);
+            playActive = true;
+        }
+    }
     public static IEnumerator RefreshCountDown()
     {
         if (PlayerPrefs.GetInt("tracking") == 0 || playActive)
@@ -1075,6 +1099,18 @@ public class ButtonMaster : MonoBehaviour {
     {
         if (rewardVideo.IsLoaded())
             rewardVideo.Show();
+        else
+        {
+            if (Advertisement.IsReady("rewardedVideo"))
+            {
+                var options = new ShowOptions { resultCallback = UnityReward };
+                Advertisement.Show("rewardedVideo",options);
+            }                
+            else
+            {
+                StartCoroutine(WaitForAd("rewardedVideo"));
+            }
+        }
     }
     private void LoadInters()
     {
@@ -1093,9 +1129,56 @@ public class ButtonMaster : MonoBehaviour {
     public static void ShowBannerAd()
     {
         //removing all unity ad stuff and switching to ADMOB
+        //AdMob+Unity+Possibly Facebook 12/3/18
         if (interstitial.IsLoaded())
             interstitial.Show();
+        else//reload google Ad but display Unity Ad
+        {
+            instance.LoadInters();
+            if (!inMenu)
+            {
+                if (Advertisement.IsReady("banner"))
+                {
+                    var defaults = new BannerOptions { showCallback = instance.ExitAds };
+                    Advertisement.Banner.Show("banner",defaults);
+                    //_Player.instance.StartCoroutine(EnableAdExit());
+                }
+
+                else
+                {
+                    if (!inMenu)
+                        _Player.instance.StartCoroutine(WaitForAd("banner"));
+                    //  else removing banner inmenu
+                    // instance.StartCoroutine(WaitForAd("banner"));
+                }
+            }
+        }
         
+    }
+    private void ExitAds()
+    {
+        _Player.instance.StartCoroutine(EnableAdExit());
+    }
+    private static IEnumerator EnableAdExit()
+    {
+       // waiting = true;
+        //instance.exitBanner.SetActive(true);
+        for (int x = 15; x > 0; x--)
+        {
+            instance.exitBanner.GetComponentInChildren<Text>().text = x.ToString();
+            yield return new WaitForSeconds(1);
+        }
+        //waiting = false;
+        instance.exitBanner.GetComponentInChildren<Text>().text = "";
+        Advertisement.Banner.Hide();
+      
+    }
+    public void HideBanner()
+    {
+        if (waiting)
+            return;
+        Advertisement.Banner.Hide();
+        //Advertisement.Banner.Load("banner");
     }
     private void BannerDestroy(object sender, EventArgs args)
     {
@@ -1104,10 +1187,10 @@ public class ButtonMaster : MonoBehaviour {
     }
     public static IEnumerator WaitForAd(string ad)
     {
-
-        while (!Advertisement.IsReady("banner"))
+        while (!Advertisement.IsReady("banner"))//I'll most likely add a call to FB ads here or alternate between FB & unity as a last resort when ads won't load.
             yield return new WaitForSeconds(.5f);
-        Advertisement.Banner.Show("banner");
+        var defaults = new BannerOptions { showCallback = instance.ExitAds };
+        Advertisement.Banner.Show("banner", defaults);
     }
     public static void RewardB(ShowResult result) // might not need any of this. leaving just in case
     {
@@ -1245,7 +1328,7 @@ public class ButtonMaster : MonoBehaviour {
     public void GoToFull()
     {
         //Debug.Log("Attempting");
-        Application.OpenURL("https://play.google.com/store/apps/details?id=com.franchiz3.GreenLight19");
+        Application.OpenURL("https://play.google.com/store/apps/details?id=com.franchiz3.GreenLight19f");
     }
     #endregion
 }
