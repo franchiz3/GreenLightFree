@@ -355,6 +355,7 @@
     <None Include="Assets\UserReporting\Scripts\Unity.Cloud.UserReporting.Client.xml" />
     <None Include="Assets\UserReporting\Scripts\Unity.Cloud.UserReporting.Plugin.xml" />
     <None Include="Assets\UserReporting\link.xml" />
+    <None Include="Assets\dreamlo\README_FIRST.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

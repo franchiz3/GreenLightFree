@@ -8,6 +8,8 @@ using UnityEngine.Advertisements;
 using UnityEngine.UI;
 
 public class ButtonMaster : MonoBehaviour {
+    public static string playerName;
+    public static dreamloLeaderBoard dl;
     private static int shot = 125;
     public static ButtonMaster instance;
     public GameObject master, exitBanner;
@@ -23,7 +25,7 @@ public class ButtonMaster : MonoBehaviour {
     public SimpleHealthBar shotBar, lastShot;
     private Coroutine current;
     private string tempShot = null;
-    private static bool paramsActive, editActive, soundActive, musicMuted, FXMuted,waiting ;
+    private static bool paramsActive, editActive, soundActive, musicMuted, FXMuted,waiting, naming ;
     public static bool inMenu, UIActive, displaying = false, tipsEnabled, playActive = true;
     private Color tempColor;
     public GameObject[] shotParams, newShotParams;
@@ -37,7 +39,9 @@ public class ButtonMaster : MonoBehaviour {
         AdInit();
         //////////
         instance = master.GetComponent<ButtonMaster>();
+        dl = GameObject.Find("dreamloPrefab").GetComponent<dreamloLeaderBoard>();
         SetPlayerVariables();
+        playerName = PlayerPrefs.GetString("name","");
         tempColor = GameObject.Find("Regular Mode").GetComponent<Image>().color;
         GameObject.Find("Regular Mode").GetComponent<Image>().color = Color.gray;
         Instantiate();
@@ -169,8 +173,22 @@ public class ButtonMaster : MonoBehaviour {
                 _Player.longRange = false;
                 longToMid.gameObject.GetComponentInChildren<Text>().text = "Mid Range";
             }
-            if(playActive)
-                go.SetActive(true);   
+            if(playActive && playerName != "")
+                go.SetActive(true);
+            else
+            {
+                if (playerName != "")
+                    go.SetActive(true);
+                else
+                {
+                    naming = true;
+                    //Debug.Log("Naming Activated");
+                    shotParamsToggler.GetComponentInChildren<Text>().text = "Accept";
+                    newShotParams[0].GetComponentInChildren<Text>().text = "Username...";
+                    newShotParams[0].SetActive(true);
+                    paramsActive = true;
+                }
+            }
         }
         else
         {
@@ -188,8 +206,16 @@ public class ButtonMaster : MonoBehaviour {
         timeButtons.SetActive(false);
         cancelShot.SetActive(false);
 
-        foreach (GameObject field in newShotParams)
-          field.SetActive(false);
+        foreach (GameObject field in newShotParams) //adding ability to have a name for the leaderboard. name has to be set whether the person is new or returning to the game after the update
+            if (naming)
+            {
+                if(field.name != "DisplayName")
+                    field.SetActive(false);
+            }
+            else
+            {
+                field.SetActive(false);
+            }
 
 
        
@@ -245,7 +271,8 @@ public class ButtonMaster : MonoBehaviour {
             // Debug.Log("Issue Here");
             dailyShots.GetComponentInChildren<Text>().text = "Shots Left: " + shotsLeft;
         }
-        
+        if(playerName != "")
+            GameObject.Find("_Instructions").GetComponent<Text>().text = "Hi "+ playerName + "! Accept A JumpShot, Select A Stage & Touch Go!";
     } 
 
     //-------------------------------------------------------------------------------
@@ -433,32 +460,93 @@ public class ButtonMaster : MonoBehaviour {
             _Player.shot.displayName = tempShot;
         }
         else//deactivate dropdowns, change jumpshot, and reactivate gameplay
-        {           
-            _Player.rLong = shotParams[1].GetComponent<Dropdown>().value + 67;//<----- number here has to be the lowest possible value, makes going from input field to file easy
-            _Player.rMid = shotParams[2].GetComponent<Dropdown>().value + 67;
-            _Player.shot = SetShot(shotParams[0].GetComponent<Dropdown>().captionText.text);
-            PlayerPrefs.SetInt("rLong", _Player.rLong);
-            PlayerPrefs.SetInt("rMid", _Player.rMid);
-            PlayerPrefs.SetString("shot", shotParams[0].GetComponent<Dropdown>().captionText.text);
-            if (tempShot != null && tempShot != _Player.shot.displayName)
-                _Player.shotChanged = true;
-            if (!_Player.longRange)
-                PlayerPrefs.SetInt("long", 0);
+        {
+            if (!naming)
+            {
+                _Player.rLong = shotParams[1].GetComponent<Dropdown>().value + 67;//<----- number here has to be the lowest possible value, makes going from input field to file easy
+                _Player.rMid = shotParams[2].GetComponent<Dropdown>().value + 67;
+                _Player.shot = SetShot(shotParams[0].GetComponent<Dropdown>().captionText.text);
+                PlayerPrefs.SetInt("rLong", _Player.rLong);
+                PlayerPrefs.SetInt("rMid", _Player.rMid);
+                PlayerPrefs.SetString("shot", shotParams[0].GetComponent<Dropdown>().captionText.text);
+                if (tempShot != null && tempShot != _Player.shot.displayName)
+                    _Player.shotChanged = true;
+                if (!_Player.longRange)
+                    PlayerPrefs.SetInt("long", 0);
+                else
+                    PlayerPrefs.SetInt("long", 1);
+                //_Player.CalculateGreenWindow(rLong, rMid);
+                longToMid.gameObject.SetActive(false);
+                newShot.SetActive(true);
+                foreach (GameObject dropdown in shotParams)
+                    dropdown.SetActive(false);
+            }
             else
-                PlayerPrefs.SetInt("long", 1);
-            //_Player.CalculateGreenWindow(rLong, rMid);
-            longToMid.gameObject.SetActive(false);
-            newShot.SetActive(true);
-            foreach (GameObject dropdown in shotParams)
-                dropdown.SetActive(false);
-            paramsActive = false;
-            shotParamsToggler.GetComponentInChildren<Text>().text = "Edit\nJumpshot";
+            {
+                if(newShotParams[0].GetComponent<InputField>().text.Length > 12)
+                {
+                    StartCoroutine(DisplayTip("Name Must Be Fewer Than 12 Characters!", false, true));
+                    return;
+                }
+                else if (dl.NameExists(newShotParams[0].GetComponent<InputField>().text))
+                {
+                    StartCoroutine(DisplayTip("Sorry But That Name Is Taken! Please Try Another Name Or Throw Some Numbers In There. Make Sure Not To Use An * In Your Name!", false, true));
+                    return;
+                }
+                else if(newShotParams[0].GetComponent<InputField>().text == "")
+                {
+                    StartCoroutine(DisplayTip("You Must Enter A Name To Continue! Be Sure Not To Use Any Asterisks * !", false, true));
+                    return;
+                }
+                else if (newShotParams[0].GetComponent<InputField>().text.Contains("*"))
+                {
+                    StartCoroutine(DisplayTip("Make Sure Not To Use An * In Your Name!", false, true));
+                    return;
+                }
+                else
+                {
+                    playerName = newShotParams[0].GetComponent<InputField>().text;
+                    newShotParams[0].GetComponentInChildren<Text>().text = "Shot Name...";
+                    newShotParams[0].SetActive(false);
+                    PlayerPrefs.SetString("name", playerName);
+                    dl.AddScore(playerName, PlayerPrefs.GetInt("highScore30"), 30);
+                    dl.AddScore(playerName, PlayerPrefs.GetInt("highScore60"), 60);
+                    dl.AddScore(playerName, PlayerPrefs.GetInt("highScore90"), 90);
+                    GameObject.Find("_Instructions").GetComponent<Text>().text = "Hi " + playerName + "! Accept A JumpShot, Select A Stage & Touch Go!";
+                    naming = false;
+                }
+            }
+
+            if (playerName != "")
+            {
+                paramsActive = false;
+                shotParamsToggler.GetComponentInChildren<Text>().text = "Edit\nJumpshot";
+            }
+            
             if (playActive)
             {
                 if (_Player.timeAttack)
                     timeButtons.SetActive(true);
                 else
-                    go.SetActive(true);
+                {
+                    if (playerName != "")
+                        go.SetActive(true);
+                    else
+                    {
+                        naming = true;
+                        StartCoroutine(DisplayTip("Welcome To The New LeaderBoard System! Please Set Your Username To Display Your Scores!", false, true));
+                        newShotParams[0].SetActive(true);
+                    }
+                }
+            }
+            else
+            {
+                if(playerName == "")
+                {
+                    naming = true;
+                    StartCoroutine(DisplayTip("You're Out Of Shots For Now Buuuuuut; Welcome To The New LeaderBoard System! Please Set Your Username To Display Your Scores!", false, true));
+                    newShotParams[0].SetActive(true);
+                }
             }
             
         }
@@ -1010,8 +1098,8 @@ public class ButtonMaster : MonoBehaviour {
     {
         if(result == ShowResult.Skipped)
             StartCoroutine(DisplayTip("If You Skip The Ad You Get No Shots :(", false, true));
-        else if(result == ShowResult.Failed)
-            StartCoroutine(DisplayTip("Ad Failed To Load. Please Try Again. If The Problem Persists Contact The Developer", false, true));
+        //else if(result == ShowResult.Failed)
+            //StartCoroutine(DisplayTip("Ad Failed To Load. Please Try Again. If The Problem Persists Contact The Developer", false, true));
         else if(result == ShowResult.Finished)
         {
             StartCoroutine(DisplayTip("Congratulations! You Just Earned 20 Shots!", false, true));

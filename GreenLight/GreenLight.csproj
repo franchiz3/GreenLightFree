@@ -271,6 +271,9 @@
     <Compile Include="Assets\2D_Basketball_Maker\_Scripts\custom_var.cs" />
     <Compile Include="Assets\2D_Basketball_Maker\_Scripts\hud_control.cs" />
     <Compile Include="Assets\2D_Basketball_Maker\_Textures\_Stage_Desert\_clouds_scroll.cs" />
+    <Compile Include="Assets\dreamlo\dreamloLeaderBoard.cs" />
+    <Compile Include="Assets\dreamlo\dreamloPromoCode.cs" />
+    <Compile Include="Assets\dreamlo\LeaderBoardSample.cs" />
     <Compile Include="Assets\GoogleMobileAds\Api\AdFailedToLoadEventArgs.cs" />
     <Compile Include="Assets\GoogleMobileAds\Api\AdLoader.cs" />
     <Compile Include="Assets\GoogleMobileAds\Api\AdPosition.cs" />
@@ -351,6 +354,7 @@
     <Compile Include="Assets\Scripts\AddedItemsController.cs" />
     <Compile Include="Assets\Scripts\ButtonMaster.cs" />
     <Compile Include="Assets\Scripts\JumpShot.cs" />
+    <Compile Include="Assets\Scripts\LeaderBoard.cs" />
     <Compile Include="Assets\Scripts\ShotBarChanger.cs" />
     <Compile Include="Assets\Scripts\TimeController.cs" />
     <Compile Include="Assets\Scripts\XShadowSummoner.cs" />
@@ -383,6 +387,7 @@
     <None Include="Assets\UserReporting\Scripts\Unity.Cloud.UserReporting.Client.xml" />
     <None Include="Assets\UserReporting\Scripts\Unity.Cloud.UserReporting.Plugin.xml" />
     <None Include="Assets\UserReporting\link.xml" />
+    <None Include="Assets\dreamlo\README_FIRST.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

@@ -45,11 +45,14 @@ public class TimeController : MonoBehaviour {
         GameObject.Find("_GameControl").GetComponent<hud_control>()._objects_hud_control[2].SetActive(true);
         GameObject.Find("_GameControl").GetComponent<_audio_control>()._gameover_sound();
         highScoreT = GameObject.Find("_NewRecord");
+        
         if (highScoreT)
             highScoreT.SetActive(false);
         if (PlayerPrefs.GetInt("highScore" + timeSetting) < _Player.score)
         {
             PlayerPrefs.SetInt("highScore" + timeSetting, _Player.score);
+            dreamloLeaderBoard.SwitchLinks(timeSetting);
+            ButtonMaster.dl.AddScore(ButtonMaster.playerName, PlayerPrefs.GetInt("highScore"+timeSetting));
             highScoreT.SetActive(true);
         }
         highScore.text = PlayerPrefs.GetInt("highScore" + timeSetting).ToString();
@@ -59,9 +62,9 @@ public class TimeController : MonoBehaviour {
             ButtonMaster.shotsLeft = 0;
             StartCoroutine(ButtonMaster.DisplayTip("Sorry You're Out Of Shots Today :(. Have No Fear, You Can Earn More By Watching An Ad! (Main Menu)", false, true));
             ButtonMaster.playActive = false;
-            System.DateTime end = System.DateTime.Now.AddDays(1);
+            //System.DateTime end = System.DateTime.Now.AddDays(1);
             //if (!PlayerPrefs.HasKey("coolEnd"))
-              //  PlayerPrefs.SetString("coolEnd", end.ToString());
+            //  PlayerPrefs.SetString("coolEnd", end.ToString());
             //StartCoroutine(ButtonMaster.RefreshCountDown());
             _Player.shotEnabled = false;
             return;
